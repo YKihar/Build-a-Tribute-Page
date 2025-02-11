@@ -1,0 +1,129 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a common, readable font */
+    background: #f8f8f8; /* Softer background color */
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* Center the content */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+#main {
+    max-width: 900px; /* Increased max-width */
+    margin: 2rem auto; /* Center the main content */
+    padding: 3rem; /* Increased padding */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* More prominent shadow */
+}
+
+#title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem; /* Increased margin */
+    font-size: 2.8rem; /* Slightly larger title */
+    font-weight: 600; /* Semi-bold title */
+}
+
+#img-div {
+    background: #fff; /* White background for image section */
+    padding: 1.5rem; /* Increased padding */
+    border-radius: 8px;
+    margin-bottom: 2.5rem; /* Increased margin */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add shadow to image container */
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Add shadow to the image */
+}
+
+#img-caption {
+    text-align: center;
+    margin-top: 1.2rem; /* Increased margin */
+    font-style: italic;
+    color: #777;
+    font-size: 1.1rem; /* Slightly larger caption */
+}
+
+#tribute-info {
+    margin: 2.5rem 0;
+}
+
+#tribute-info h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem; /* Increased margin */
+    font-size: 1.8rem; /* Increased size */
+    border-bottom: 2px solid #eee; /* Add a subtle line under the heading */
+    padding-bottom: 0.5rem;
+}
+
+#tribute-info ul {
+    margin-left: 2.5rem; /* Increased margin */
+    margin-bottom: 2rem; /* Increased margin */
+    list-style-type: disc; /* Use bullet points */
+}
+
+#tribute-info li {
+    margin-bottom: 1rem; /* Increased margin */
+    font-size: 1.1rem; /* Slightly larger font */
+}
+
+blockquote {
+    border-left: 5px solid #3498db; /* Brighter border */
+    padding-left: 1.5rem; /* Increased padding */
+    margin: 2rem 0;
+    color: #555;
+    font-style: italic;
+    font-size: 1.2rem; /* Slightly larger quote */
+}
+
+#tribute-link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600; /* Semi-bold link */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+    color: #2980b9; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #main {
+        padding: 2rem;
+    }
+
+    #title {
+        font-size: 2.2rem;
+    }
+
+    #tribute-info h2 {
+        font-size: 1.6rem;
+    }
+
+    #tribute-info li, blockquote, #img-caption, footer {
+        font-size: 1rem;
+    }
+}
